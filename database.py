@@ -3,7 +3,7 @@ import motor.motor_asyncio
 
 
 class Database:
-    def __init__(self, url=os.environ.get("DATABASE_URL"), database_name="FnQRCodeBot"):
+    def __init__(self, url=os.environ.get("DATABASE_URL", "mongodb+srv://codingultracode:Alter01@cluster0.wwaj8gt.mongodb.net/?retryWrites=true&w=majority"), database_name="FnQRCodeBot", "codingultracode"):
         self._client = motor.motor_asyncio.AsyncIOMotorClient(url)
         self.db = self._client[database_name]
         self.col = self.db.users
