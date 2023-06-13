@@ -17,7 +17,7 @@ from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid
 from database import db
 
 
-BOT_OWNER = int(os.environ["BOT_OWNER", "-1001383315175"])
+BOT_OWNER = int(os.environ["BOT_OWNER", "1383315175"])
 
 
 async def send_msg(user_id, message):
