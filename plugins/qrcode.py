@@ -9,7 +9,7 @@ from database import db
 
 QR_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton(text="⚙ Join Updates Channel ⚙", url=f"https://telegram.me/FayasNoushad")
+        InlineKeyboardButton(text="⚙ Join Updates Channel ⚙", url=f"https://telegram.me/CodingUltra")
         ]]
     )
 
@@ -38,9 +38,9 @@ async def qr_decode(bot, update):
         await decode_text.edit(text=error)
         return
     await decode_text.edit_text(
-        text=f"Link :- {qr_text}\n\nMade by @FayasNoushad",
+        text=f"Link :- {qr_text}\n\nMade by @CodingUltra",
       	reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text="⚙ Join Updates Channel ⚙", url=f"https://telegram.me/FayasNoushad")]]
+            [[InlineKeyboardButton(text="⚙ Join Updates Channel ⚙", url=f"https://telegram.me/CodingUltra")]]
         ),
         disable_web_page_preview=True
     )
